@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'home-background': `url('./src/assets/images/grid.svg')`,
+        'home-background': `url('assets/images/grid.svg')`,
       },
     },
   },
