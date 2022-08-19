@@ -8,7 +8,7 @@ export const useStore: any = create((set: any) => ({
   // * Check user's OS and set theme.
   getOperationalSystemTheme: () =>
     set((state: any) => {
-      state.app.theme
+      window.matchMedia('(prefers-color-scheme: dark)').matches
         ? document.body.classList.add('dark')
         : document.body.classList.remove('dark');
 
