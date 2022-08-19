@@ -51,7 +51,7 @@ export default function MenuNav() {
 
       {/* Main Menu*/}
       <nav
-        className={`fixed flex flex-col justify-between min-h-screen w-full dark:text-dark-white bg-light-white dark:bg-dark-black p-11 z-30 translate-x-full`}
+        className={`fixed flex flex-col justify-between min-h-screen w-full dark:text-dark-white bg-light-white dark:bg-dark-black p-11 translate-x-full`}
         ref={mainMenu}
       >
         <div className='flex flex-col gap-y-2 text-4xl justify-center flex-1'>

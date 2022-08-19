@@ -9,6 +9,7 @@ export default function Spiral() {
       'translate-y-[-50%]',
       'w-[544px]',
       'h-[544px]',
+      'scale-[0.53] sm:scale-[1]',
       'border-2',
       'border-solid',
       'border-light-blue',
