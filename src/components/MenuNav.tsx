@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { useStore } from '../store';
 
 export default function MenuNav() {
-  const { menu } = useStore(state => state.app);
+  const { menu } = useStore((state: any) => state.app);
   const fakeMenu_one = useRef(null!);
   const fakeMenu_two = useRef(null!);
   const mainMenu = useRef(null!);

@@ -3,10 +3,10 @@ import { useStore } from '../store';
 import { gsap } from 'gsap';
 
 export default function themeButton() {
-  const { theme } = useStore(state => state.app);
-  const toggleTheme = useStore(state => state.toggleTheme);
+  const { theme } = useStore((state: any) => state.app);
+  const toggleTheme = useStore((state: any) => state.toggleTheme);
   const getOperationalSystemTheme = useStore(
-    state => state.getOperationalSystemTheme
+    (state: any) => state.getOperationalSystemTheme
   );
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function themeButton() {
 }
 
 function SVG_dark_mode() {
-  const { theme } = useStore(state => state.app);
+  const { theme } = useStore((state: any) => state.app);
 
   const style = {
     rectangle:

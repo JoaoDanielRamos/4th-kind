@@ -4,7 +4,7 @@ import { useStore } from '../store';
 
 export default function Wipe() {
   const wipe = useRef(null!);
-  const { theme } = useStore(state => state.app);
+  const { theme } = useStore((state: any) => state.app);
 
   useEffect(() => {
     // * Brings the wipe offscreen on top

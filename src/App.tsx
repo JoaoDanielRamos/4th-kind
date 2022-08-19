@@ -8,7 +8,7 @@ import Spiral from './components/Spiral';
 // * styles
 
 function App() {
-  const { menu } = useStore(state => state.app);
+  const { menu } = useStore((state: any) => state.app);
 
   const styles = {
     App: `w-full min-h-screen flex flex-col items-center bg-home-background bg-light-white ${

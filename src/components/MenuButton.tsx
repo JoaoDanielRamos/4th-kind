@@ -3,8 +3,8 @@ import { useStore } from '../store';
 import gsap from 'gsap';
 
 export default function MenuButton() {
-  const toggleMenu = useStore(state => state.toggleMenu);
-  const { menu } = useStore(state => state.app);
+  const toggleMenu = useStore((state: any) => state.toggleMenu);
+  const { menu } = useStore((state: any) => state.app);
 
   return (
     <button
@@ -18,7 +18,7 @@ export default function MenuButton() {
 }
 
 function MenuIcon() {
-  const { menu } = useStore(state => state.app);
+  const { menu } = useStore((state: any) => state.app);
 
   const lineTop = useRef(null!);
   const lineMid = useRef(null!)!;
