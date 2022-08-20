@@ -15,7 +15,7 @@ export default function themeButton() {
 
   return (
     <button
-      className='group fixed flex items-center gap-x-2 bottom-10 left-10 hover:text-light-blue dark:hover:text-dark-red z-0'
+      className='group fixed flex items-center gap-x-2 bottom-10 left-4 sm:left-10 hover:text-light-blue dark:hover:text-dark-red z-0'
       onClick={toggleTheme}
     >
       <SVG_dark_mode />
