@@ -1,20 +1,25 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import tw from '../hooks/tw';
+import { useStore } from '../store';
 
 export default function Spiral() {
+  const { menu } = useStore((state: any) => state.app);
+
   const styles = {
     spiral: [
-      'fixed',
-      'top-[50%]',
-      'translate-y-[-50%]',
       'w-[544px]',
       'h-[544px]',
-      'scale-[0.53] sm:scale-[1]',
+      'scale-[0.54] sm:scale-[1]',
       'border-2',
       'border-solid',
       'border-light-blue',
       'dark:border-dark-red',
       'overflow-hidden',
+      'transition-all ease duration-[0.8s]',
+      menu
+        ? 'fixed top-[50%] translate-y-[-50%] translate-x-[-94px] sm:translate-x-[-95px]'
+        : 'fixed top-[50%] translate-y-[-50%]',
     ],
     square: [
       'absolute top-[50%]',
@@ -28,8 +33,6 @@ export default function Spiral() {
       'hover:bg-light-blue/25 hover:dark:bg-dark-red/25',
     ],
   };
-
-  const tw = (styles: string[]) => styles.join(' ');
 
   const squareXS = useRef(null!);
   const squareS = useRef(null!);
