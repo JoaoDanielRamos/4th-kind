@@ -27,10 +27,7 @@ function App() {
       'transition-all ease duration-[0.8s]',
 
       // * Text
-      'text-light-black dark:text-dark-white text-2xl bg-center',
-
-      // * etc
-      'leading-6',
+      'text-light-black dark:text-dark-white text-2xl bg-center leading-6',
     ],
   };
 
