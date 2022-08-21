@@ -10,7 +10,7 @@ export default function MenuNav() {
   const mainMenu = useRef(null!);
 
   const styles = {
-    nav: ['fixed z-[5] top-0 right-0', 'w-ful max-w-[600px]'],
+    nav: ['fixed top-0 right-0 z-[5]', 'w-full max-w-[600px]'],
     fakeMenuOne: [
       'fixed z-10',
       'bg-light-black dark:bg-dark-white',
@@ -69,6 +69,7 @@ export default function MenuNav() {
       });
     }
   }, [menu]);
+
   return (
     <div className={tw(styles.nav)}>
       <div className={tw(styles.fakeMenuOne)} ref={fakeMenu_one} />
